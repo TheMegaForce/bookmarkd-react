@@ -36,7 +36,7 @@ const Index = () => {
     
       {bookmark.map(book => (
         <div key={book._id} className='flex-initial'>
-          <Link to={`${book.url}`} target='_blank'>
+          <Link to={`${book.url}`} target='_blank' rel="noopener noreferrer">
             <h1 className='animate-[pulse_2s_ease-in-out_infinite] hover:animate-none w-full p-2 bg-red-300 hover:bg-red-400'>{book.title}</h1>
           </Link>
 
