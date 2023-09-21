@@ -6,3 +6,9 @@ export const bookmarkLoader = async () => {
     console.log(bookmark);
     return bookmark
 };
+
+export const showLoader = async ({params}) => {
+    const res = await fetch(url + "/bookmarks/" + params.id)
+    const bookmark = await res.json()
+    return bookmark
+}
