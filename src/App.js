@@ -4,7 +4,7 @@ import { Outlet } from 'react-router-dom'
 
 function App() {
   return (
-    <div className="App">
+    <div className="bg-red-100 h-screen flex flex-col items-center justify-center">
       <Header/>
       <Outlet/>
     </div>
